@@ -1,0 +1,39 @@
+general:
+  email:
+    regex: '^[a-zA-Z0-9]+(?:[._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$'
+  # bank_account:
+  #   rhb:
+  #   hsbc:
+  #   maybank:
+my:
+  address:
+    regex: '^[\w\s,.#&''"@()/\-]{1,150}$'
+  postal_code:
+    regex: '^\d{5}$'
+  user:
+    name:
+      regex: '^(?=.{1,80}$)[A-Za-z][A-Za-z@&''.\-/ ]{1,}(?:[A-Za-z@&''.\-/]{2,})$'
+    ic_number:
+      regex: '^(0[0-9]|[1-9][0-9])(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[0-6]|2[1-9]|[3-9][0-9])(00[1-9]|0[1-9][0-9]|[1-9][0-9]{2})([0-9])$'
+    passport_number:
+      regex: '^[AHK]\d{8}$'
+    army_passport_number:
+      regex: '^[AHK]\d{8}$'
+    tin_number:
+      regex: '^(?:IG|SG|OG)\d{9,11}$|^(?:C|CS|D|E|F|FA|PT|TA|TC|TN|TR|TP|J|LE)\d{9,11}$'
+    phone_number:
+      country_code: '+60'
+      regex: '^1\d{8,9}$'
+  company:
+    name:
+      regex: '^[1-9]\d{7,9}$'
+    phone_number:
+      regex: '^(?=.{1,100}$)[A-Za-z0-9@,&''.\-:/\s]*$'
+    ssm_number:
+      regex: '^(?=.{1,100}$)[A-Za-z0-9@,&''.\-:/\s]*$'
+id:
+  user:
+    phone_number:
+      country_code: '+62'
+      regex: '^1\d{9,12}$'
+
